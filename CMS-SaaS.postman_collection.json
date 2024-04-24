@@ -1,0 +1,2263 @@
+{
+	"info": {
+		"_postman_id": "9b2cf84e-ba13-4fe7-8e37-f638ce6221ef",
+		"name": "CMS-SaaS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13004222"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "oauth/token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authority",
+								"value": "night.actcms.click"
+							},
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic Y21zLXdlYi1jbGllbnQ6Y21zLXdlYi1wYXNz"
+							},
+							{
+								"key": "content-type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "cookie",
+								"value": "indicator=d3B9YnQ%3D; JSESSIONID=C233AC369C9F1EFFE5AD4A40B4E53E9C"
+							},
+							{
+								"key": "origin",
+								"value": "https://night.actcms.click"
+							},
+							{
+								"key": "referer",
+								"value": "https://night.actcms.click/authentication/login"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "admin@virsec.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "P@ssword1234567",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "cms-web-client",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://tenth.actcms.click/services/oauth/token",
+							"protocol": "https",
+							"host": [
+								"tenth",
+								"actcms",
+								"click"
+							],
+							"path": [
+								"services",
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authority",
+								"value": "night.actcms.click"
+							},
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6ImFjaGlubmFwdXJrYXJAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE3MDYxNzczNjQsImFkZGl0aW9uYWxEZXRhaWxzIjp7ImxvZ291dFRpbWUiOjE3MDYxNzQwNTE5NDgsImxvZ2luVGltZSI6MTcwNjE3MzkwNDE5NiwiYXV0aFR5cGUiOiJsb2NhbCIsInVzZXJJZCI6IjY1YWY4NDExNzkwNTA0NDU3YWIzOTc2YSIsInJvbGVOYW1lcyI6WyJTdXBlciBBZG1pbiJdLCJvcmdJZCI6ImRlZmF1bHQiLCJlbWFpbCI6ImFjaGlubmFwdXJrYXJAdmlyc2VjLmNvbSJ9LCJhdXRob3JpdGllcyI6WyJTdXBlciBBZG1pbiJdLCJjbGllbnRfaWQiOiJjbXMtd2ViLWNsaWVudCJ9.RX0QAbVhgah_Z5EFFixRxpKXGzg-JDHOS9ccln6f_04"
+							},
+							{
+								"key": "content-length",
+								"value": "0"
+							},
+							{
+								"key": "content-type",
+								"value": "application/vnd.virsec.v1+json"
+							},
+							{
+								"key": "cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6ImFjaGlubmFwdXJrYXJAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhdGkiOiI5LzB4UXZORlg4ZGZhRzZsL0wrcWRTTjlCLzg9IiwiZXhwIjoxNzA2MjYxOTY0LCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzA2MTc0MDUxOTQ4LCJsb2dpblRpbWUiOjE3MDYxNzM5MDQxOTYsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NWFmODQxMTc5MDUwNDQ1N2FiMzk3NmEiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJhY2hpbm5hcHVya2FyQHZpcnNlYy5jb20ifSwiYXV0aG9yaXRpZXMiOlsiU3VwZXIgQWRtaW4iXSwiY2xpZW50X2lkIjoiY21zLXdlYi1jbGllbnQifQ._vRDShcNg-h0Ouy-o-gZcZ4WU4WeCteZnioBVuekIzY; indicator=ZWNkdA%3D%3D; t_count=IA%3D%3D; JSESSIONID=8B3E6AE0F47474E10A776A58E0EBAFC9"
+							},
+							{
+								"key": "origin",
+								"value": "https://night.actcms.click"
+							},
+							{
+								"key": "referer",
+								"value": "https://night.actcms.click/help/api-doc"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "https://night.actcms.click/services/api/logout",
+							"protocol": "https",
+							"host": [
+								"night",
+								"actcms",
+								"click"
+							],
+							"path": [
+								"services",
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API-Documentation",
+			"item": [
+				{
+					"name": "Incidents",
+					"item": [
+						{
+							"name": "incident/application/incidents/search",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6Im1zcmluaXZhc2FuQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzA3NDA3NTMyLCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzA3Mzk2OTM1NTg5LCJsb2dpblRpbWUiOjE3MDc0MDUzMzM5MTYsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NWI3NGFiY2VlZGQzOTcxMTExNDk3ZWMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJtc3Jpbml2YXNhbkB2aXJzZWMuY29tIn0sImF1dGhvcml0aWVzIjpbIlN1cGVyIEFkbWluIl0sImNsaWVudF9pZCI6ImNtcy13ZWItY2xpZW50In0.4jwn7KYNhTqkFKuVEx8EiYZ2X3otqlGEGXfy4igxEj4"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": {
+									"raw": "https://night.actcms.click/services/api/v1/incident/application/incidents/search",
+									"protocol": "https",
+									"host": [
+										"night",
+										"actcms",
+										"click"
+									],
+									"path": [
+										"services",
+										"api",
+										"v1",
+										"incident",
+										"application",
+										"incidents",
+										"search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "incident/application/incidents/search?incident-state=ARCHIVED",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6Im1zcmluaXZhc2FuQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzA2NzcxNDgzLCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzA2NzY2NjE3NTExLCJsb2dpblRpbWUiOjE3MDY3Njk0ODE3NzIsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NWI3NGFiY2VlZGQzOTcxMTExNDk3ZWMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJtc3Jpbml2YXNhbkB2aXJzZWMuY29tIn0sImF1dGhvcml0aWVzIjpbIlN1cGVyIEFkbWluIl0sImNsaWVudF9pZCI6ImNtcy13ZWItY2xpZW50In0.HOLKeuO-aEztuAGY_YLLLBL-1Yf-4M4j3c8ao1lEDPQ"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": {
+									"raw": "https://night.actcms.click/services/api/v1/incident/application/incidents/search?incident-state=ARCHIVED",
+									"protocol": "https",
+									"host": [
+										"night",
+										"actcms",
+										"click"
+									],
+									"path": [
+										"services",
+										"api",
+										"v1",
+										"incident",
+										"application",
+										"incidents",
+										"search"
+									],
+									"query": [
+										{
+											"key": "incident-state",
+											"value": "ARCHIVED"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "incident/application/incidents/search?incident-state=NON_ARCHIVED",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6Im1zcmluaXZhc2FuQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzA2NzcxNDgzLCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzA2NzY2NjE3NTExLCJsb2dpblRpbWUiOjE3MDY3Njk0ODE3NzIsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NWI3NGFiY2VlZGQzOTcxMTExNDk3ZWMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJtc3Jpbml2YXNhbkB2aXJzZWMuY29tIn0sImF1dGhvcml0aWVzIjpbIlN1cGVyIEFkbWluIl0sImNsaWVudF9pZCI6ImNtcy13ZWItY2xpZW50In0.HOLKeuO-aEztuAGY_YLLLBL-1Yf-4M4j3c8ao1lEDPQ"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": {
+									"raw": "https://night.actcms.click/services/api/v1/incident/application/incidents/search?incident-state=NON_ARCHIVED",
+									"protocol": "https",
+									"host": [
+										"night",
+										"actcms",
+										"click"
+									],
+									"path": [
+										"services",
+										"api",
+										"v1",
+										"incident",
+										"application",
+										"incidents",
+										"search"
+									],
+									"query": [
+										{
+											"key": "incident-state",
+											"value": "NON_ARCHIVED"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "incident/acknowledge - Need to update  Incidedent ID",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6Im1zcmluaXZhc2FuQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzA2Nzc2MTg5LCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzA2Nzc0MzI0NDI0LCJsb2dpblRpbWUiOjE3MDY3NzM0NDQzNDEsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NWI3NGFiY2VlZGQzOTcxMTExNDk3ZWMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJtc3Jpbml2YXNhbkB2aXJzZWMuY29tIn0sImF1dGhvcml0aWVzIjpbIlN1cGVyIEFkbWluIl0sImNsaWVudF9pZCI6ImNtcy13ZWItY2xpZW50In0.GZ0_iaR5tkW2Gz_bzKN8QE9NDWlhsAix8vRdaqPyqAE"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"expression\": {\r\n        \"relation\": \"AND\",\r\n        \"criteriaList\": [\r\n            {\r\n                \"operator\": \"IN\",\r\n                \"ignoreCase\": false,\r\n                \"field\": \"_id\",\r\n                \"value\": null,\r\n                \"values\": [\r\n                    \"65bb42c08044916622eb9164\"\r\n                ],\r\n                \"oid\": false\r\n            }\r\n        ],\r\n        \"expressionList\": []\r\n    },\r\n    \"sort\": {\r\n        \"sortItems\": [\r\n            {\r\n                \"key\": \"timestamp\",\r\n                \"direction\": \"DESC\"\r\n            }\r\n        ]\r\n    },\r\n    \"page\": {\r\n        \"page\": 1,\r\n        \"size\": 200000\r\n    },\r\n    \"collation\": null\r\n}"
+								},
+								"url": {
+									"raw": "https://night.actcms.click/services/api/v1/incident/acknowledge",
+									"protocol": "https",
+									"host": [
+										"night",
+										"actcms",
+										"click"
+									],
+									"path": [
+										"services",
+										"api",
+										"v1",
+										"incident",
+										"acknowledge"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "incident/search - Need to update Instance ID",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6Im1zcmluaXZhc2FuQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzA2ODQ0MjE5LCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzA2ODQwNTI1NTc2LCJsb2dpblRpbWUiOjE3MDY4NDIyMjM3MTMsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NWI3NGFiY2VlZGQzOTcxMTExNDk3ZWMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJtc3Jpbml2YXNhbkB2aXJzZWMuY29tIn0sImF1dGhvcml0aWVzIjpbIlN1cGVyIEFkbWluIl0sImNsaWVudF9pZCI6ImNtcy13ZWItY2xpZW50In0.SjkkI41bWj313D04LBDMWpjTHHI12JRHG4qi4FVBaKI"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"expression\":{\n      \"relation\":\"AND\",\n      \"criteriaList\":[\n         {\n            \"operator\":\"IN\",\n            \"ignoreCase\":false,\n            \"field\":\"applicationInstanceId\",\n            \"value\":null,\n            \"values\":[\n               \"65ba0d123cc2177a1b36c0b6\"\n            ],\n            \"oid\":false\n         }\n      ],\n      \"expressionList\":[\n         \n      ]\n   },\n   \"sort\":{\n      \"sortItems\":[\n         {\n            \"key\":\"timestamp\",\n            \"direction\":\"DESC\"\n         }\n      ]\n   },\n   \"page\":{\n      \"page\":\"1\",\n      \"size\":\"20\"\n   },\n   \"collation\":null\n}"
+								},
+								"url": {
+									"raw": "https://night.actcms.click/services/api/v1/incident/search",
+									"protocol": "https",
+									"host": [
+										"night",
+										"actcms",
+										"click"
+									],
+									"path": [
+										"services",
+										"api",
+										"v1",
+										"incident",
+										"search"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "App Control Policies",
+					"item": [
+						{
+							"name": "process-monitoring/profile/scriptConfig/search - Need to update ACP ID",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6Im1zcmluaXZhc2FuQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzA2NzgzNzg4LCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzA2NzgxNjc0MDY1LCJsb2dpblRpbWUiOjE3MDY3ODE5Mzg4NTcsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NWI3NGFiY2VlZGQzOTcxMTExNDk3ZWMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJtc3Jpbml2YXNhbkB2aXJzZWMuY29tIn0sImF1dGhvcml0aWVzIjpbIlN1cGVyIEFkbWluIl0sImNsaWVudF9pZCI6ImNtcy13ZWItY2xpZW50In0.zK6-gfd2_40U-PvnKHgO9oUKzTeQAtKSSBJ0X0bJ7ak"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"expression\":{\n      \"relation\":\"AND\",\n      \"criteriaList\":[\n         {\n            \"operator\":\"EQ\",\n            \"ignoreCase\":false,\n            \"field\":\"scriptPolicyId\",\n            \"value\":\"65b928b7b0a97f51d3a689d3\",\n            \"values\":null,\n            \"oid\":false\n         }\n      ],\n      \"expressionList\":[\n         \n      ]\n   },\n   \"sort\":{\n      \"sortItems\":[\n         {\n            \"key\":\"id\",\n            \"direction\":\"DESC\"\n         }\n      ]\n   },\n   \"page\":{\n      \"page\":1,\n      \"size\":2000\n   },\n   \"collation\":null\n}"
+								},
+								"url": {
+									"raw": "https://night.actcms.click/services/api/v1/process-monitoring/profile/scriptConfig/search",
+									"protocol": "https",
+									"host": [
+										"night",
+										"actcms",
+										"click"
+									],
+									"path": [
+										"services",
+										"api",
+										"v1",
+										"process-monitoring",
+										"profile",
+										"scriptConfig",
+										"search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "process-monitoring/profile/scriptConfig/ - Need to update ACP ID",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6Im1zcmluaXZhc2FuQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzA2Nzg1ODAwLCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzA2NzgzNzMxMjUyLCJsb2dpblRpbWUiOjE3MDY3ODM5NDAyNjksImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NWI3NGFiY2VlZGQzOTcxMTExNDk3ZWMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJtc3Jpbml2YXNhbkB2aXJzZWMuY29tIn0sImF1dGhvcml0aWVzIjpbIlN1cGVyIEFkbWluIl0sImNsaWVudF9pZCI6ImNtcy13ZWItY2xpZW50In0.9hbs3zPVBFhL0Lxa5hOYQr1RNsd-KvMOH0247_3cJVM"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"scriptPolicyId\": \"65b928b7b0a97f51d3a689d3\",\n    \"scriptPolicyName\": \"ACP Access Control\",\n    \"name\": \"Python 1\",\n    \"description\": \"Python\",\n    \"consoleAllowed\": true,\n    \"interpreter\": \"python\",\n    \"amsiProtection\": false,\n    \"minAllowedVersion\": \"\",\n    \"explicitWhitelistingNeeded\": true,\n    \"fileBasedExecutionPolicy\": {\n        \"allowed\": false,\n        \"mappedExtensions\": [],\n        \"onlyWhitelistedScripts\": true,\n        \"onlySignedScripts\": true\n    },\n    \"filelessExecutionPolicy\": {\n        \"allowed\": false,\n        \"unsafeCommandPatterns\": {\n            \"allowed\": false,\n            \"patterns\": []\n        },\n        \"allowedParentProcesses\": {\n            \"allowed\": false,\n            \"patterns\": []\n        },\n        \"allowedUsers\": {\n            \"allowed\": false,\n            \"patterns\": []\n        }\n    },\n    \"runtimePolicy\": {\n        \"maxNetworkConnections\": 2,\n        \"allowedPaths\": [],\n        \"registryAccessAllowed\": true,\n        \"launchProcessAllowed\": true,\n        \"terminateProcessAllowed\": true\n    }\n}"
+								},
+								"url": {
+									"raw": "https://night.actcms.click/services/api/v1/process-monitoring/profile/scriptConfig",
+									"protocol": "https",
+									"host": [
+										"night",
+										"actcms",
+										"click"
+									],
+									"path": [
+										"services",
+										"api",
+										"v1",
+										"process-monitoring",
+										"profile",
+										"scriptConfig"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "process-monitoring/profile/scriptConfig - Need to update ACP ID, SP ID",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6Im1zcmluaXZhc2FuQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzA2Nzg1ODAwLCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzA2NzgzNzMxMjUyLCJsb2dpblRpbWUiOjE3MDY3ODM5NDAyNjksImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NWI3NGFiY2VlZGQzOTcxMTExNDk3ZWMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJtc3Jpbml2YXNhbkB2aXJzZWMuY29tIn0sImF1dGhvcml0aWVzIjpbIlN1cGVyIEFkbWluIl0sImNsaWVudF9pZCI6ImNtcy13ZWItY2xpZW50In0.9hbs3zPVBFhL0Lxa5hOYQr1RNsd-KvMOH0247_3cJVM"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"id\":\"65bb750cb0a97f51d3a6b7c9\",\n   \"scriptPolicyId\":\"65b928b7b0a97f51d3a689d3\",\n   \"scriptPolicyName\":\"ACP Access Control\",\n   \"name\":\"Python New Change 1\",\n   \"description\":\"Python New Change 1\",\n   \"consoleAllowed\":true,\n   \"interpreter\":\"python\",\n   \"amsiProtection\":false,\n   \"minAllowedVersion\":\"\",\n   \"explicitWhitelistingNeeded\":true,\n   \"fileBasedExecutionPolicy\":{\n      \"allowed\":false,\n      \"mappedExtensions\":[\n         \n      ],\n      \"onlyWhitelistedScripts\":true,\n      \"onlySignedScripts\":true\n   },\n   \"filelessExecutionPolicy\":{\n      \"allowed\":false,\n      \"unsafeCommandPatterns\":{\n         \"allowed\":false,\n         \"patterns\":[\n            \n         ]\n      },\n      \"allowedParentProcesses\":{\n         \"allowed\":false,\n         \"patterns\":[\n            \n         ]\n      },\n      \"allowedUsers\":{\n         \"allowed\":false,\n         \"patterns\":[\n            \n         ]\n      }\n   },\n   \"runtimePolicy\":{\n      \"maxNetworkConnections\":2,\n      \"allowedPaths\":[\n         \n      ],\n      \"registryAccessAllowed\":true,\n      \"launchProcessAllowed\":true,\n      \"terminateProcessAllowed\":true\n   }\n}"
+								},
+								"url": {
+									"raw": "https://night.actcms.click/services/api/v1/process-monitoring/profile/scriptConfig",
+									"protocol": "https",
+									"host": [
+										"night",
+										"actcms",
+										"click"
+									],
+									"path": [
+										"services",
+										"api",
+										"v1",
+										"process-monitoring",
+										"profile",
+										"scriptConfig"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Host Protection",
+					"item": [
+						{
+							"name": "process-monitoring/profile/scripts/search",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6Im1zcmluaXZhc2FuQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzA2Nzg2NzU5LCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzA2Nzg0Nzg0NDE0LCJsb2dpblRpbWUiOjE3MDY3ODQ4MzM3MjgsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NWI3NGFiY2VlZGQzOTcxMTExNDk3ZWMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJtc3Jpbml2YXNhbkB2aXJzZWMuY29tIn0sImF1dGhvcml0aWVzIjpbIlN1cGVyIEFkbWluIl0sImNsaWVudF9pZCI6ImNtcy13ZWItY2xpZW50In0.Cp2VnxnZS1msJXMHRegHpbPkxeXqTFOMr38Gfnqag3E"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"expression\":{\n      \"relation\":\"AND\",\n      \"criteriaList\":[\n         \n      ],\n      \"expressionList\":[\n         \n      ]\n   },\n   \"sort\":{\n      \"sortItems\":[\n         {\n            \"key\":\"name\",\n            \"direction\":\"ASC\"\n         },\n         {\n            \"key\":\"path\",\n            \"direction\":\"ASC\"\n         },\n         {\n            \"key\":\"lastSeen\",\n            \"direction\":\"DESC\"\n         }\n      ]\n   },\n   \"page\":{\n      \"page\":1,\n      \"size\":20\n   },\n   \"collation\":null\n}"
+								},
+								"url": {
+									"raw": "https://night.actcms.click/services/api/v1/process-monitoring/profile/scripts/search",
+									"protocol": "https",
+									"host": [
+										"night",
+										"actcms",
+										"click"
+									],
+									"path": [
+										"services",
+										"api",
+										"v1",
+										"process-monitoring",
+										"profile",
+										"scripts",
+										"search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "process-monitoring/hosts/process-profile/65bb1811b0a97f51d3a692a0/search - need to update instance and host profile id",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6Im1zcmluaXZhc2FuQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzA2ODQ5MTQxLCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzA2ODQ1NTI4MTQyLCJsb2dpblRpbWUiOjE3MDY4NDcyMzkyNzcsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NWI3NGFiY2VlZGQzOTcxMTExNDk3ZWMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJtc3Jpbml2YXNhbkB2aXJzZWMuY29tIn0sImF1dGhvcml0aWVzIjpbIlN1cGVyIEFkbWluIl0sImNsaWVudF9pZCI6ImNtcy13ZWItY2xpZW50In0.TLknPF_4bVcEb1eZ4xZYqsyIfSHrpJkRZWKB2g1kJIM"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"searchQuery\": {\r\n        \"expression\": {\r\n            \"relation\": \"AND\",\r\n            \"criteriaList\": [\r\n                {\r\n                    \"operator\": \"CONTAINS\",\r\n                    \"field\": \"name\",\r\n                    \"value\": \"\",\r\n                    \"ignoreCase\": true,\r\n                    \"oid\": false\r\n                },\r\n                {\r\n                    \"operator\": \"CONTAINS\",\r\n                    \"field\": \"65ba0d123cc2177a1b36c0b6\",\r\n                    \"value\": \"\",\r\n                    \"ignoreCase\": false,\r\n                    \"oid\": false\r\n                },\r\n                {\r\n                    \"operator\": \"NE\",\r\n                    \"field\": \"operatingSystem.name\",\r\n                    \"value\": \"Windows\"\r\n                },\r\n                {\r\n                    \"operator\": \"EQ\",\r\n                    \"field\": \"serviceInstanceType\",\r\n                    \"value\": \"ASI\"\r\n                },\r\n                {\r\n                    \"operator\": \"NGT\",\r\n                    \"field\": \"65bb1811b0a97f51d3a692a0\",\r\n                    \"value\": 0\r\n                },\r\n                {\r\n                    \"operator\": \"NE\",\r\n                    \"field\": \"deleted\",\r\n                    \"value\": true\r\n                },\r\n                {\r\n                    \"operator\": \"EQ\",\r\n                    \"field\": \"processMonitoring\",\r\n                    \"value\": null\r\n                }\r\n            ],\r\n            \"expressionList\": []\r\n        }\r\n    }\r\n}"
+								},
+								"url": {
+									"raw": "https://night.actcms.click/services/api/v1/process-monitoring/hosts/process-profile/65bb1811b0a97f51d3a692a0/search",
+									"protocol": "https",
+									"host": [
+										"night",
+										"actcms",
+										"click"
+									],
+									"path": [
+										"services",
+										"api",
+										"v1",
+										"process-monitoring",
+										"hosts",
+										"process-profile",
+										"65bb1811b0a97f51d3a692a0",
+										"search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "process-monitoring/profile/libraries/search",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6Im1zcmluaXZhc2FuQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzA2ODQ5MTQxLCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzA2ODQ1NTI4MTQyLCJsb2dpblRpbWUiOjE3MDY4NDcyMzkyNzcsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NWI3NGFiY2VlZGQzOTcxMTExNDk3ZWMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJtc3Jpbml2YXNhbkB2aXJzZWMuY29tIn0sImF1dGhvcml0aWVzIjpbIlN1cGVyIEFkbWluIl0sImNsaWVudF9pZCI6ImNtcy13ZWItY2xpZW50In0.TLknPF_4bVcEb1eZ4xZYqsyIfSHrpJkRZWKB2g1kJIM"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"expression\":{\r\n      \"relation\":\"AND\",\r\n      \"criteriaList\":[\r\n         \r\n      ],\r\n      \"expressionList\":[\r\n         \r\n      ]\r\n   },\r\n   \"sort\":{\r\n      \"sortItems\":[\r\n         {\r\n            \"key\":\"lastSeen\",\r\n            \"direction\":\"DESC\"\r\n         },\r\n         {\r\n            \"key\":\"libname\",\r\n            \"direction\":\"ASC\"\r\n         },\r\n         {\r\n            \"key\":\"libpath\",\r\n            \"direction\":\"ASC\"\r\n         }\r\n      ]\r\n   },\r\n   \"page\":{\r\n      \"page\":1,\r\n      \"size\":20\r\n   },\r\n   \"collation\":null\r\n}"
+								},
+								"url": {
+									"raw": "https://night.actcms.click/services/api/v1/process-monitoring/profile/libraries/search",
+									"protocol": "https",
+									"host": [
+										"night",
+										"actcms",
+										"click"
+									],
+									"path": [
+										"services",
+										"api",
+										"v1",
+										"process-monitoring",
+										"profile",
+										"libraries",
+										"search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "process-monitoring/hosts/bulk-host-action - Need to update Instance ID and Host Profile",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6Im1zcmluaXZhc2FuQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzA2ODUxNTgyLCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzA2ODQ5NzcwMTI2LCJsb2dpblRpbWUiOjE3MDY4NDkyMzI2NzksImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NWI3NGFiY2VlZGQzOTcxMTExNDk3ZWMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJtc3Jpbml2YXNhbkB2aXJzZWMuY29tIn0sImF1dGhvcml0aWVzIjpbIlN1cGVyIEFkbWluIl0sImNsaWVudF9pZCI6ImNtcy13ZWItY2xpZW50In0.my7Fa4o8_kpUDOuyEM4DRBRIqE0hF2rJVcTz5fxVkG0"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"searchQuery\":{\r\n      \"expression\":{\r\n         \"relation\":\"AND\",\r\n         \"criteriaList\":[\r\n            {\r\n               \"operator\":\"CONTAINS\",\r\n               \"field\":\"name\",\r\n               \"value\":\"\",\r\n               \"ignoreCase\":true,\r\n               \"oid\":false\r\n            },\r\n            {\r\n               \"operator\":\"CONTAINS\",\r\n               \"field\":\"serviceInstanceId\",\r\n               \"value\":\"\",\r\n               \"ignoreCase\":false,\r\n               \"oid\":false\r\n            },\r\n            {\r\n               \"operator\":\"NE\",\r\n               \"field\":\"operatingSystem.name\",\r\n               \"value\":\"Windows\"\r\n            },\r\n            {\r\n               \"operator\":\"EQ\",\r\n               \"field\":\"serviceInstanceType\",\r\n               \"value\":\"ASI\"\r\n            },\r\n            {\r\n               \"operator\":\"NGT\",\r\n               \"field\":\"processMonitoring.profileId\",\r\n               \"value\":0\r\n            },\r\n            {\r\n               \"operator\":\"NE\",\r\n               \"field\":\"deleted\",\r\n               \"value\":true\r\n            },\r\n            {\r\n               \"operator\":\"EQ\",\r\n               \"field\":\"processMonitoring\",\r\n               \"value\":null\r\n            }\r\n         ],\r\n         \"expressionList\":[\r\n            \r\n         ]\r\n      }\r\n   },\r\n   \"ids\":[\r\n      \"65bb53ee3cc2177a1b36c0fc\"\r\n   ],\r\n   \"applyForAll\":false,\r\n   \"profileObjectId\":\"65bb1af3b0a97f51d3a693f3\",\r\n   \"action\":\"ASSOCIATE\"\r\n}"
+								},
+								"url": {
+									"raw": "https://night.actcms.click/services/api/v1/process-monitoring/hosts/bulk-host-action",
+									"protocol": "https",
+									"host": [
+										"night",
+										"actcms",
+										"click"
+									],
+									"path": [
+										"services",
+										"api",
+										"v1",
+										"process-monitoring",
+										"hosts",
+										"bulk-host-action"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "process-monitoring/profile/process-profiles/search - Need to update Host Profile Name",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6Im1zcmluaXZhc2FuQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzA2ODUxNTgyLCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzA2ODQ5NzcwMTI2LCJsb2dpblRpbWUiOjE3MDY4NDkyMzI2NzksImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NWI3NGFiY2VlZGQzOTcxMTExNDk3ZWMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJtc3Jpbml2YXNhbkB2aXJzZWMuY29tIn0sImF1dGhvcml0aWVzIjpbIlN1cGVyIEFkbWluIl0sImNsaWVudF9pZCI6ImNtcy13ZWItY2xpZW50In0.my7Fa4o8_kpUDOuyEM4DRBRIqE0hF2rJVcTz5fxVkG0"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"expression\":{\r\n      \"relation\":\"AND\",\r\n      \"criteriaList\":[\r\n         {\r\n            \"operator\":\"NE\",\r\n            \"ignoreCase\":false,\r\n            \"field\":\"deleted\",\r\n            \"value\":true,\r\n            \"values\":null,\r\n            \"oid\":false\r\n         },\r\n         {\r\n            \"operator\":\"CONTAINS\",\r\n            \"ignoreCase\":false,\r\n            \"field\":\"name\",\r\n            \"value\":\"Akash_HMM_Profile\",\r\n            \"values\":null,\r\n            \"oid\":false\r\n         },\r\n         {\r\n            \"operator\":\"EQ\",\r\n            \"ignoreCase\":false,\r\n            \"field\":\"podTemplate\",\r\n            \"value\":false,\r\n            \"values\":null,\r\n            \"oid\":false\r\n         }\r\n      ],\r\n      \"expressionList\":[\r\n         \r\n      ]\r\n   },\r\n   \"sort\":{\r\n      \"sortItems\":[\r\n         {\r\n            \"key\":\"id\",\r\n            \"direction\":\"DESC\"\r\n         }\r\n      ]\r\n   },\r\n   \"page\":{\r\n      \"page\":1,\r\n      \"size\":15\r\n   },\r\n   \"collation\":null\r\n}"
+								},
+								"url": {
+									"raw": "https://night.actcms.click/services/api/v1/process-monitoring/profile/process-profiles/search",
+									"protocol": "https",
+									"host": [
+										"night",
+										"actcms",
+										"click"
+									],
+									"path": [
+										"services",
+										"api",
+										"v1",
+										"process-monitoring",
+										"profile",
+										"process-profiles",
+										"search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "process-monitoring/hosts/maintenance-action - need to update process profile id",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6Im1zcmluaXZhc2FuQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzA2ODYwMDQ0LCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzA2ODU1MTU3MjYwLCJsb2dpblRpbWUiOjE3MDY4NTc3NzkxNDIsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NWI3NGFiY2VlZGQzOTcxMTExNDk3ZWMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJtc3Jpbml2YXNhbkB2aXJzZWMuY29tIn0sImF1dGhvcml0aWVzIjpbIlN1cGVyIEFkbWluIl0sImNsaWVudF9pZCI6ImNtcy13ZWItY2xpZW50In0.ZvV3lNWPSS4w-7di-uk9uvJKIKzXh_3g48Vi6kXXfV0"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"searchQuery\":{\n      \"expression\":{\n         \"relation\":\"AND\",\n         \"criteriaList\":[\n            {\n               \"operator\":\"EQ\",\n               \"ignoreCase\":false,\n               \"field\":\"deleted\",\n               \"value\":false,\n               \"values\":null,\n               \"oid\":false\n            }\n         ],\n         \"expressionList\":[\n            \n         ]\n      }\n   },\n   \"ids\":[\n      \"65bb53ee3cc2177a1b36c0fc\"\n   ],\n   \"applyForAll\":false,\n   \"action\":\"MAINTENANCE_START\"\n}"
+								},
+								"url": {
+									"raw": "https://night.actcms.click/services/api/v1/process-monitoring/hosts/maintenance-action",
+									"protocol": "https",
+									"host": [
+										"night",
+										"actcms",
+										"click"
+									],
+									"path": [
+										"services",
+										"api",
+										"v1",
+										"process-monitoring",
+										"hosts",
+										"maintenance-action"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Registration Window-CMS-15663",
+			"item": [
+				{
+					"name": "/services/topology/registration/windows/active",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6Im1zcmluaXZhc2FuQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzA3MjE3MDE1LCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzA3MjE0ODI4OTIxLCJsb2dpblRpbWUiOjE3MDcyMTUwNzgyMzAsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NWI3NGFiY2VlZGQzOTcxMTExNDk3ZWMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJtc3Jpbml2YXNhbkB2aXJzZWMuY29tIn0sImF1dGhvcml0aWVzIjpbIlN1cGVyIEFkbWluIl0sImNsaWVudF9pZCI6ImNtcy13ZWItY2xpZW50In0.DJexg7ZBfK6pkEsnxoM2Xq7ZF86aIBMu10IWIFo_uH0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE3MDA4MjYwNzAsImFkZGl0aW9uYWxEZXRhaWxzIjp7ImxvZ291dFRpbWUiOjE3MDA4MjQyNTczNDYsImxvZ2luVGltZSI6MTcwMDgyMzc1MzUxMywiYXV0aFR5cGUiOiJsb2NhbCIsInVzZXJJZCI6IjY1NjA2NDNkNmUzYWY4NTQwMGNmYWViMyIsInJvbGVOYW1lcyI6WyJTdXBlciBBZG1pbiJdLCJvcmdJZCI6ImRlZmF1bHQiLCJlbWFpbCI6InRlc3RAdmlyc2VjLmNvbSJ9LCJhdXRob3JpdGllcyI6WyJTdXBlciBBZG1pbiJdLCJjbGllbnRfaWQiOiJjbXMtd2ViLWNsaWVudCJ9.4siTMWf80hZFn_u-fM9tP32Am2uKqaotXVvY-cG0skI",
+								"disabled": true
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-type",
+								"value": "application/vnd.virsec.v1+json"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhdGkiOiI1SFhTQ1c0MlMyRjY2QmhWNjFzYWtzdStoanc9IiwiZXhwIjoxNzAwOTAyMzk1LCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzAwODE1OTMzNzY4LCJsb2dpblRpbWUiOm51bGwsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NTYwNjQzZDZlM2FmODU0MDBjZmFlYjMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJ0ZXN0QHZpcnNlYy5jb20ifSwiYXV0aG9yaXRpZXMiOlsiU3VwZXIgQWRtaW4iXSwiY2xpZW50X2lkIjoiY21zLXdlYi1jbGllbnQifQ.dZxMtgagTNmBLcbiN4rmgZXNywyafgog9irdlHgWcfQ; indicator=ZWNkdA%3D%3D; t_count=IA%3D%3D; JSESSIONID=B543D0C675BE572F4CB658BE78343CCA"
+							},
+							{
+								"key": "Referer",
+								"value": "https://10.16.32.3/deploy/probes"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"url": {
+							"raw": "https://night.actcms.click/services/topology/registration/windows/active",
+							"protocol": "https",
+							"host": [
+								"night",
+								"actcms",
+								"click"
+							],
+							"path": [
+								"services",
+								"topology",
+								"registration",
+								"windows",
+								"active"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/services/topology/registration/windows/feature-status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6Im1zcmluaXZhc2FuQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzA3MjE2NjI1LCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzA3MjEyNTAwNzQ1LCJsb2dpblRpbWUiOjE3MDcyMTQ1NDcxMTMsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NWI3NGFiY2VlZGQzOTcxMTExNDk3ZWMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJtc3Jpbml2YXNhbkB2aXJzZWMuY29tIn0sImF1dGhvcml0aWVzIjpbIlN1cGVyIEFkbWluIl0sImNsaWVudF9pZCI6ImNtcy13ZWItY2xpZW50In0.WRGekepriJreR1W0NlyHLvPSCRqthwNZR_t7HAJRSXA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE3MDA4MjYwNzAsImFkZGl0aW9uYWxEZXRhaWxzIjp7ImxvZ291dFRpbWUiOjE3MDA4MjQyNTczNDYsImxvZ2luVGltZSI6MTcwMDgyMzc1MzUxMywiYXV0aFR5cGUiOiJsb2NhbCIsInVzZXJJZCI6IjY1NjA2NDNkNmUzYWY4NTQwMGNmYWViMyIsInJvbGVOYW1lcyI6WyJTdXBlciBBZG1pbiJdLCJvcmdJZCI6ImRlZmF1bHQiLCJlbWFpbCI6InRlc3RAdmlyc2VjLmNvbSJ9LCJhdXRob3JpdGllcyI6WyJTdXBlciBBZG1pbiJdLCJjbGllbnRfaWQiOiJjbXMtd2ViLWNsaWVudCJ9.4siTMWf80hZFn_u-fM9tP32Am2uKqaotXVvY-cG0skI",
+								"disabled": true
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-type",
+								"value": "application/vnd.virsec.v1+json"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhdGkiOiI1SFhTQ1c0MlMyRjY2QmhWNjFzYWtzdStoanc9IiwiZXhwIjoxNzAwOTAyMzk1LCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzAwODE1OTMzNzY4LCJsb2dpblRpbWUiOm51bGwsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NTYwNjQzZDZlM2FmODU0MDBjZmFlYjMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJ0ZXN0QHZpcnNlYy5jb20ifSwiYXV0aG9yaXRpZXMiOlsiU3VwZXIgQWRtaW4iXSwiY2xpZW50X2lkIjoiY21zLXdlYi1jbGllbnQifQ.dZxMtgagTNmBLcbiN4rmgZXNywyafgog9irdlHgWcfQ; indicator=ZWNkdA%3D%3D; t_count=IA%3D%3D; JSESSIONID=B543D0C675BE572F4CB658BE78343CCA"
+							},
+							{
+								"key": "Referer",
+								"value": "https://10.16.32.3/deploy/probes"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"url": {
+							"raw": "https://night.actcms.click/services/topology/registration/windows/feature-status",
+							"protocol": "https",
+							"host": [
+								"night",
+								"actcms",
+								"click"
+							],
+							"path": [
+								"services",
+								"topology",
+								"registration",
+								"windows",
+								"feature-status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/services/topology/registration/windows/search",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6Im1zcmluaXZhc2FuQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzA3MjE2NjI1LCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzA3MjEyNTAwNzQ1LCJsb2dpblRpbWUiOjE3MDcyMTQ1NDcxMTMsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NWI3NGFiY2VlZGQzOTcxMTExNDk3ZWMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJtc3Jpbml2YXNhbkB2aXJzZWMuY29tIn0sImF1dGhvcml0aWVzIjpbIlN1cGVyIEFkbWluIl0sImNsaWVudF9pZCI6ImNtcy13ZWItY2xpZW50In0.WRGekepriJreR1W0NlyHLvPSCRqthwNZR_t7HAJRSXA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE3MDA4MjYwNzAsImFkZGl0aW9uYWxEZXRhaWxzIjp7ImxvZ291dFRpbWUiOjE3MDA4MjQyNTczNDYsImxvZ2luVGltZSI6MTcwMDgyMzc1MzUxMywiYXV0aFR5cGUiOiJsb2NhbCIsInVzZXJJZCI6IjY1NjA2NDNkNmUzYWY4NTQwMGNmYWViMyIsInJvbGVOYW1lcyI6WyJTdXBlciBBZG1pbiJdLCJvcmdJZCI6ImRlZmF1bHQiLCJlbWFpbCI6InRlc3RAdmlyc2VjLmNvbSJ9LCJhdXRob3JpdGllcyI6WyJTdXBlciBBZG1pbiJdLCJjbGllbnRfaWQiOiJjbXMtd2ViLWNsaWVudCJ9.4siTMWf80hZFn_u-fM9tP32Am2uKqaotXVvY-cG0skI",
+								"disabled": true
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-type",
+								"value": "application/vnd.virsec.v1+json"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhdGkiOiI1SFhTQ1c0MlMyRjY2QmhWNjFzYWtzdStoanc9IiwiZXhwIjoxNzAwOTAyMzk1LCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzAwODE1OTMzNzY4LCJsb2dpblRpbWUiOm51bGwsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NTYwNjQzZDZlM2FmODU0MDBjZmFlYjMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJ0ZXN0QHZpcnNlYy5jb20ifSwiYXV0aG9yaXRpZXMiOlsiU3VwZXIgQWRtaW4iXSwiY2xpZW50X2lkIjoiY21zLXdlYi1jbGllbnQifQ.dZxMtgagTNmBLcbiN4rmgZXNywyafgog9irdlHgWcfQ; indicator=ZWNkdA%3D%3D; t_count=IA%3D%3D; JSESSIONID=B543D0C675BE572F4CB658BE78343CCA"
+							},
+							{
+								"key": "Referer",
+								"value": "https://10.16.32.3/deploy/probes"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "https://night.actcms.click/services/topology/registration/windows/search",
+							"protocol": "https",
+							"host": [
+								"night",
+								"actcms",
+								"click"
+							],
+							"path": [
+								"services",
+								"topology",
+								"registration",
+								"windows",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/services/topology/registration/windows/open",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6ImFkbWluQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzM5NDQ4MTM1LCJhZGRpdGlvbmFsRGV0YWlscyI6eyJmaXJzdE5hbWUiOiJTdW5lZWwgS3VtYXIiLCJsYXN0TmFtZSI6IkNoYW5kdWx1cmkiLCJsb2dvdXRUaW1lIjoxNzA3OTA2OTYwNjE3LCJsb2dpblRpbWUiOjE3MDc5MTIxMjUyNDAsInVzZXJJZCI6IjY1Yzg5ZjkzNWM2ZTExMjdlOWUyMmUwZSIsIm9yZ0lkIjoiZGVmYXVsdCIsImVtYWlsIjoiYWRtaW5Admlyc2VjLmNvbSJ9LCJhdXRob3JpdGllcyI6WyJTdXBlciBBZG1pbiJdLCJjbGllbnRfaWQiOiJjbXMtd2ViLWNsaWVudCJ9.Gy7aCx5QqNOs2exeOTOdsFWHIRl53we-ltE5LgM3DaM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE3MDA4MjYwNzAsImFkZGl0aW9uYWxEZXRhaWxzIjp7ImxvZ291dFRpbWUiOjE3MDA4MjQyNTczNDYsImxvZ2luVGltZSI6MTcwMDgyMzc1MzUxMywiYXV0aFR5cGUiOiJsb2NhbCIsInVzZXJJZCI6IjY1NjA2NDNkNmUzYWY4NTQwMGNmYWViMyIsInJvbGVOYW1lcyI6WyJTdXBlciBBZG1pbiJdLCJvcmdJZCI6ImRlZmF1bHQiLCJlbWFpbCI6InRlc3RAdmlyc2VjLmNvbSJ9LCJhdXRob3JpdGllcyI6WyJTdXBlciBBZG1pbiJdLCJjbGllbnRfaWQiOiJjbXMtd2ViLWNsaWVudCJ9.4siTMWf80hZFn_u-fM9tP32Am2uKqaotXVvY-cG0skI",
+								"disabled": true
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-type",
+								"value": "application/vnd.virsec.v1+json"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhdGkiOiI1SFhTQ1c0MlMyRjY2QmhWNjFzYWtzdStoanc9IiwiZXhwIjoxNzAwOTAyMzk1LCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzAwODE1OTMzNzY4LCJsb2dpblRpbWUiOm51bGwsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NTYwNjQzZDZlM2FmODU0MDBjZmFlYjMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJ0ZXN0QHZpcnNlYy5jb20ifSwiYXV0aG9yaXRpZXMiOlsiU3VwZXIgQWRtaW4iXSwiY2xpZW50X2lkIjoiY21zLXdlYi1jbGllbnQifQ.dZxMtgagTNmBLcbiN4rmgZXNywyafgog9irdlHgWcfQ; indicator=ZWNkdA%3D%3D; t_count=IA%3D%3D; JSESSIONID=B543D0C675BE572F4CB658BE78343CCA"
+							},
+							{
+								"key": "Referer",
+								"value": "https://10.16.32.3/deploy/probes"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://devdemo.actcms.click/services/topology/registration/windows/open?durationInMinutes=7200emo",
+							"protocol": "https",
+							"host": [
+								"devdemo",
+								"actcms",
+								"click"
+							],
+							"path": [
+								"services",
+								"topology",
+								"registration",
+								"windows",
+								"open"
+							],
+							"query": [
+								{
+									"key": "durationInMinutes",
+									"value": "7200emo"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/services/topology/registration/windows/open Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6ImFkbWluQHZpcnNlYy5jb20iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzM5NDU4NDk4LCJhZGRpdGlvbmFsRGV0YWlscyI6eyJmaXJzdE5hbWUiOiJTdW5lZWwiLCJsYXN0TmFtZSI6Ikt1bWFyIiwibG9nb3V0VGltZSI6MTcwNzkyMDkzODgzNSwibG9naW5UaW1lIjoxNzA3OTIyMzk1MTMzLCJ1c2VySWQiOiI2NWNjOTgxYWI2NjlhMTQ5ZTY5NzdlYTUiLCJvcmdJZCI6ImRlZmF1bHQiLCJlbWFpbCI6ImFkbWluQHZpcnNlYy5jb20ifSwiYXV0aG9yaXRpZXMiOlsiU3VwZXIgQWRtaW4iXSwiY2xpZW50X2lkIjoiY21zLXdlYi1jbGllbnQifQ.LRJSgiSoO2r87M5e7wlNp3AI9tXSrCM8VG7g3aKhMNA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE3MDA4MjYwNzAsImFkZGl0aW9uYWxEZXRhaWxzIjp7ImxvZ291dFRpbWUiOjE3MDA4MjQyNTczNDYsImxvZ2luVGltZSI6MTcwMDgyMzc1MzUxMywiYXV0aFR5cGUiOiJsb2NhbCIsInVzZXJJZCI6IjY1NjA2NDNkNmUzYWY4NTQwMGNmYWViMyIsInJvbGVOYW1lcyI6WyJTdXBlciBBZG1pbiJdLCJvcmdJZCI6ImRlZmF1bHQiLCJlbWFpbCI6InRlc3RAdmlyc2VjLmNvbSJ9LCJhdXRob3JpdGllcyI6WyJTdXBlciBBZG1pbiJdLCJjbGllbnRfaWQiOiJjbXMtd2ViLWNsaWVudCJ9.4siTMWf80hZFn_u-fM9tP32Am2uKqaotXVvY-cG0skI",
+								"disabled": true
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-type",
+								"value": "application/vnd.virsec.v1+json"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhdGkiOiI1SFhTQ1c0MlMyRjY2QmhWNjFzYWtzdStoanc9IiwiZXhwIjoxNzAwOTAyMzk1LCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzAwODE1OTMzNzY4LCJsb2dpblRpbWUiOm51bGwsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NTYwNjQzZDZlM2FmODU0MDBjZmFlYjMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJ0ZXN0QHZpcnNlYy5jb20ifSwiYXV0aG9yaXRpZXMiOlsiU3VwZXIgQWRtaW4iXSwiY2xpZW50X2lkIjoiY21zLXdlYi1jbGllbnQifQ.dZxMtgagTNmBLcbiN4rmgZXNywyafgog9irdlHgWcfQ; indicator=ZWNkdA%3D%3D; t_count=IA%3D%3D; JSESSIONID=B543D0C675BE572F4CB658BE78343CCA"
+							},
+							{
+								"key": "Referer",
+								"value": "https://10.16.32.3/deploy/probes"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://sixth.actcms.click/services/topology/registration/windows/open?durationInMinutes=7200emo",
+							"protocol": "https",
+							"host": [
+								"sixth",
+								"actcms",
+								"click"
+							],
+							"path": [
+								"services",
+								"topology",
+								"registration",
+								"windows",
+								"open"
+							],
+							"query": [
+								{
+									"key": "durationInMinutes",
+									"value": "7200emo"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/services/topology/registration/windows/close",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE3MDcxMjYzOTQsImFkZGl0aW9uYWxEZXRhaWxzIjp7ImxvZ291dFRpbWUiOjE3MDcxMjQyODk0NzQsImxvZ2luVGltZSI6MTcwNzEyMzEwNzIwNywiYXV0aFR5cGUiOiJsb2NhbCIsInVzZXJJZCI6IjY1YjA3N2Y0OWI4Mzc3MTdkNzI2MWViMSIsInJvbGVOYW1lcyI6WyJTdXBlciBBZG1pbiJdLCJvcmdJZCI6ImRlZmF1bHQiLCJlbWFpbCI6InRlc3RAdmlyc2VjLmNvbSJ9LCJhdXRob3JpdGllcyI6WyJTdXBlciBBZG1pbiJdLCJjbGllbnRfaWQiOiJjbXMtd2ViLWNsaWVudCJ9.07bjfydFZ9aHx6UKS52g96luBRVz-yNhZKPGJoBreF0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE3MDA4MjYwNzAsImFkZGl0aW9uYWxEZXRhaWxzIjp7ImxvZ291dFRpbWUiOjE3MDA4MjQyNTczNDYsImxvZ2luVGltZSI6MTcwMDgyMzc1MzUxMywiYXV0aFR5cGUiOiJsb2NhbCIsInVzZXJJZCI6IjY1NjA2NDNkNmUzYWY4NTQwMGNmYWViMyIsInJvbGVOYW1lcyI6WyJTdXBlciBBZG1pbiJdLCJvcmdJZCI6ImRlZmF1bHQiLCJlbWFpbCI6InRlc3RAdmlyc2VjLmNvbSJ9LCJhdXRob3JpdGllcyI6WyJTdXBlciBBZG1pbiJdLCJjbGllbnRfaWQiOiJjbXMtd2ViLWNsaWVudCJ9.4siTMWf80hZFn_u-fM9tP32Am2uKqaotXVvY-cG0skI",
+								"disabled": true
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-type",
+								"value": "application/vnd.virsec.v1+json"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhdGkiOiI1SFhTQ1c0MlMyRjY2QmhWNjFzYWtzdStoanc9IiwiZXhwIjoxNzAwOTAyMzk1LCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzAwODE1OTMzNzY4LCJsb2dpblRpbWUiOm51bGwsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NTYwNjQzZDZlM2FmODU0MDBjZmFlYjMiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJ0ZXN0QHZpcnNlYy5jb20ifSwiYXV0aG9yaXRpZXMiOlsiU3VwZXIgQWRtaW4iXSwiY2xpZW50X2lkIjoiY21zLXdlYi1jbGllbnQifQ.dZxMtgagTNmBLcbiN4rmgZXNywyafgog9irdlHgWcfQ; indicator=ZWNkdA%3D%3D; t_count=IA%3D%3D; JSESSIONID=B543D0C675BE572F4CB658BE78343CCA"
+							},
+							{
+								"key": "Referer",
+								"value": "https://10.16.32.3/deploy/probes"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://third.actcms.click/services/topology/registration/windows/close",
+							"protocol": "https",
+							"host": [
+								"third",
+								"actcms",
+								"click"
+							],
+							"path": [
+								"services",
+								"topology",
+								"registration",
+								"windows",
+								"close"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "services/oauth/token-refresh-token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic Y21zLXdlYi1jbGllbnQ6Y21zLXdlYi1wYXNz"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Cookie",
+								"value": "indicator=d3B9YnQ%3D; JSESSIONID=BA0EB7AEA28E6B535E86865F541B0A35"
+							},
+							{
+								"key": "Origin",
+								"value": "https://10.16.32.3"
+							},
+							{
+								"key": "Referer",
+								"value": "https://10.16.32.3/authentication/login"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "test@virsec.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "P@ssword1234567",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "client_id",
+									"value": "cms-web-client",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "grant_type",
+									"value": "refresh_token",
+									"type": "text"
+								},
+								{
+									"key": "refresh_token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhdGkiOiIwYlZ2ZUlSNVNxaXlhRTZsVkl6bXdTRDJ1Vms9IiwiZXhwIjoxNzAxMjI5NzUzLCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzAxMTQzMzA3MDgyLCJsb2dpblRpbWUiOjE3MDExNDMyMzg1NzMsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NTY0YjY2MzNmYzkwNTU2NWYzZjRiYWYiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJ0ZXN0QHZpcnNlYy5jb20ifSwiYXV0aG9yaXRpZXMiOlsiU3VwZXIgQWRtaW4iXSwiY2xpZW50X2lkIjoiY21zLXdlYi1jbGllbnQifQ.gfihf4M2R0Fz1N20Ze9p85dkPHxjewSXb1xt_PyDyhQ",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://10.16.32.3/services/oauth/token",
+							"protocol": "https",
+							"host": [
+								"10",
+								"16",
+								"32",
+								"3"
+							],
+							"path": [
+								"services",
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "services/dashboard/system-notifications?page=1&size=20",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE3MDcxMjYzOTQsImFkZGl0aW9uYWxEZXRhaWxzIjp7ImxvZ291dFRpbWUiOjE3MDcxMjQyODk0NzQsImxvZ2luVGltZSI6MTcwNzEyMzEwNzIwNywiYXV0aFR5cGUiOiJsb2NhbCIsInVzZXJJZCI6IjY1YjA3N2Y0OWI4Mzc3MTdkNzI2MWViMSIsInJvbGVOYW1lcyI6WyJTdXBlciBBZG1pbiJdLCJvcmdJZCI6ImRlZmF1bHQiLCJlbWFpbCI6InRlc3RAdmlyc2VjLmNvbSJ9LCJhdXRob3JpdGllcyI6WyJTdXBlciBBZG1pbiJdLCJjbGllbnRfaWQiOiJjbXMtd2ViLWNsaWVudCJ9.07bjfydFZ9aHx6UKS52g96luBRVz-yNhZKPGJoBreF0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE3MDE1NDU4MTQsImFkZGl0aW9uYWxEZXRhaWxzIjp7ImxvZ291dFRpbWUiOjE3MDE0NjMxNjY4MzEsImxvZ2luVGltZSI6MTcwMTQ2Mjk3NTQ1MywiYXV0aFR5cGUiOiJsb2NhbCIsInVzZXJJZCI6IjY1NjRiNjYzM2ZjOTA1NTY1ZjNmNGJhZiIsInJvbGVOYW1lcyI6WyJTdXBlciBBZG1pbiJdLCJvcmdJZCI6ImRlZmF1bHQiLCJlbWFpbCI6InRlc3RAdmlyc2VjLmNvbSJ9LCJhdXRob3JpdGllcyI6WyJTdXBlciBBZG1pbiJdLCJjbGllbnRfaWQiOiJjbXMtd2ViLWNsaWVudCJ9.PtGH0Xh3NrKr4cwyT8rb2f_PSTwtcDLtHQCcR8Ty0Zw",
+								"disabled": true
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-type",
+								"value": "application/vnd.virsec.v1+json"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhdGkiOiIrNnJzb2ViZEpuTXp1OVJLL3RxZ3FpenhlV3c9IiwiZXhwIjoxNzAxNjMwNDE0LCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzAxNDYzMTY2ODMxLCJsb2dpblRpbWUiOjE3MDE0NjI5NzU0NTMsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NTY0YjY2MzNmYzkwNTU2NWYzZjRiYWYiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJ0ZXN0QHZpcnNlYy5jb20ifSwiYXV0aG9yaXRpZXMiOlsiU3VwZXIgQWRtaW4iXSwiY2xpZW50X2lkIjoiY21zLXdlYi1jbGllbnQifQ.sRTw28b8VwCyIkW1n9RyAeTyzSh0xQjD6VYGa0mIq4Q; indicator=ZWNkdA%3D%3D; t_count=IA%3D%3D; JSESSIONID=C2F107F4F9735AB94B9FFFEFDE16BFC7"
+							},
+							{
+								"key": "Referer",
+								"value": "https://10.16.32.3/monitor/system-alerts"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"url": {
+							"raw": "https://third.actcms.click/services/dashboard/system-notifications?page=1&size=100",
+							"protocol": "https",
+							"host": [
+								"third",
+								"actcms",
+								"click"
+							],
+							"path": [
+								"services",
+								"dashboard",
+								"system-notifications"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/services/user/rbac/roles?page=0&sort=name&order=asc&size=20&search=",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE3MDcxMjYzOTQsImFkZGl0aW9uYWxEZXRhaWxzIjp7ImxvZ291dFRpbWUiOjE3MDcxMjQyODk0NzQsImxvZ2luVGltZSI6MTcwNzEyMzEwNzIwNywiYXV0aFR5cGUiOiJsb2NhbCIsInVzZXJJZCI6IjY1YjA3N2Y0OWI4Mzc3MTdkNzI2MWViMSIsInJvbGVOYW1lcyI6WyJTdXBlciBBZG1pbiJdLCJvcmdJZCI6ImRlZmF1bHQiLCJlbWFpbCI6InRlc3RAdmlyc2VjLmNvbSJ9LCJhdXRob3JpdGllcyI6WyJTdXBlciBBZG1pbiJdLCJjbGllbnRfaWQiOiJjbXMtd2ViLWNsaWVudCJ9.07bjfydFZ9aHx6UKS52g96luBRVz-yNhZKPGJoBreF0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE3MDE1NjE0MTEsImFkZGl0aW9uYWxEZXRhaWxzIjp7ImxvZ291dFRpbWUiOjE3MDA3NTI4Njg5OTUsImxvZ2luVGltZSI6MTcwMDc0NTYzODYyNSwiYXV0aFR5cGUiOiJsb2NhbCIsInVzZXJJZCI6IjY1NWVjZjAwYzNjODM4MDJkNDdhYzU4YiIsInJvbGVOYW1lcyI6WyJTdXBlciBBZG1pbiJdLCJvcmdJZCI6ImRlZmF1bHQiLCJlbWFpbCI6InRlc3RAdmlyc2VjLmNvbSJ9LCJhdXRob3JpdGllcyI6WyJTdXBlciBBZG1pbiJdLCJjbGllbnRfaWQiOiJjbXMtd2ViLWNsaWVudCJ9.bdlthfrl4wbMiUx3M8rqu8VTMYMQbIpeug8jXSrg99g",
+								"disabled": true
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-type",
+								"value": "application/vnd.virsec.v1+json"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci1hdXRoZW50aWNhdGlvbi1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6InRlc3RAdmlyc2VjLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhdGkiOiJDSUF3aUdiT2RhbFE5anozN1V4NzlRa3NvbXc9IiwiZXhwIjoxNzAxNjM3MDExLCJhZGRpdGlvbmFsRGV0YWlscyI6eyJsb2dvdXRUaW1lIjoxNzAwNzUyODY4OTk1LCJsb2dpblRpbWUiOjE3MDA3NDU2Mzg2MjUsImF1dGhUeXBlIjoibG9jYWwiLCJ1c2VySWQiOiI2NTVlY2YwMGMzYzgzODAyZDQ3YWM1OGIiLCJyb2xlTmFtZXMiOlsiU3VwZXIgQWRtaW4iXSwib3JnSWQiOiJkZWZhdWx0IiwiZW1haWwiOiJ0ZXN0QHZpcnNlYy5jb20ifSwiYXV0aG9yaXRpZXMiOlsiU3VwZXIgQWRtaW4iXSwiY2xpZW50X2lkIjoiY21zLXdlYi1jbGllbnQifQ.8hhOAXHI0kjZVLj_kp6yl7ImPyoXesZipMkXn_PIN_w; indicator=ZWNkdA%3D%3D; t_count=IA%3D%3D; JSESSIONID=3ED755C9BCE3DAD5E99AABAAC3FA28DD"
+							},
+							{
+								"key": "Referer",
+								"value": "https://10.16.32.10/administration/access-management/roles"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"url": {
+							"raw": "https://third.actcms.click/services/user/rbac/roles?page=0&sort=name&order=asc&size=20&search=",
+							"protocol": "https",
+							"host": [
+								"third",
+								"actcms",
+								"click"
+							],
+							"path": [
+								"services",
+								"user",
+								"rbac",
+								"roles"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "sort",
+									"value": "name"
+								},
+								{
+									"key": "order",
+									"value": "asc"
+								},
+								{
+									"key": "size",
+									"value": "20"
+								},
+								{
+									"key": "search",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VSP Migration",
+			"item": [
+				{
+					"name": "Get Probes - VM CMS",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "P@ssword@123456",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "amurnal@virsec.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "night.actcms.click"
+							},
+							{
+								"key": "accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic bXNyaW5pdmFzYW5Admlyc2VjLmNvbTpQQHNzd29yZEAxMjM0NTY="
+							},
+							{
+								"key": "cache-control",
+								"value": "max-age=0"
+							},
+							{
+								"key": "cookie",
+								"value": "indicator=d3B9YnQ%3D; JSESSIONID=649B7788CAA25B4BF0BF09D01CDC7C92"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "document"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "navigate"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "none"
+							},
+							{
+								"key": "sec-fetch-user",
+								"value": "?1"
+							},
+							{
+								"key": "upgrade-insecure-requests",
+								"value": "1"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "https://10.16.32.10/rms/probes",
+							"protocol": "https",
+							"host": [
+								"10",
+								"16",
+								"32",
+								"10"
+							],
+							"path": [
+								"rms",
+								"probes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Specific Probe Status - Need to update identifier",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "P@ssword@123456",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "msrinivasan@virsec.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW5Admlyc2VjLmNvbTpQQHNzd29yZDEyMzQ1Njc=",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://night.actcms.click/rms/fetch/stats/be9363b7-0432-4f83-9b12-7dc915b3c859",
+							"protocol": "https",
+							"host": [
+								"night",
+								"actcms",
+								"click"
+							],
+							"path": [
+								"rms",
+								"fetch",
+								"stats",
+								"be9363b7-0432-4f83-9b12-7dc915b3c859"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Probes Migration - VM CMS",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "P@ssword@123456",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "amurnal@virsec.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://10.16.32.10/rms/migrate/all?hostentry=false&cmsdns=int-sixth.actcms.click&sku=web",
+							"protocol": "https",
+							"host": [
+								"10",
+								"16",
+								"32",
+								"10"
+							],
+							"path": [
+								"rms",
+								"migrate",
+								"all"
+							],
+							"query": [
+								{
+									"key": "version",
+									"value": "2.10.0",
+									"disabled": true
+								},
+								{
+									"key": "hostentry",
+									"value": "false"
+								},
+								{
+									"key": "kafkadns",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "hostname",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "lfrport",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "cmsip",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "kafkaip",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "lfrip",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "cmsdns",
+									"value": "int-sixth.actcms.click"
+								},
+								{
+									"key": "sku",
+									"value": "web"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Probes - SaaS CMS",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "P@ssword1234567",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin@virsec.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "night.actcms.click"
+							},
+							{
+								"key": "accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic bXNyaW5pdmFzYW5Admlyc2VjLmNvbTpQQHNzd29yZEAxMjM0NTY="
+							},
+							{
+								"key": "cache-control",
+								"value": "max-age=0"
+							},
+							{
+								"key": "cookie",
+								"value": "indicator=d3B9YnQ%3D; JSESSIONID=649B7788CAA25B4BF0BF09D01CDC7C92"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "document"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "navigate"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "none"
+							},
+							{
+								"key": "sec-fetch-user",
+								"value": "?1"
+							},
+							{
+								"key": "upgrade-insecure-requests",
+								"value": "1"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "https://sixth.actcms.click/rms/probes",
+							"protocol": "https",
+							"host": [
+								"sixth",
+								"actcms",
+								"click"
+							],
+							"path": [
+								"rms",
+								"probes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Trigger CPM API To Stop VSP - SaaS CMS",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "P@ssword1234567",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin@virsec.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "authority",
+								"value": "night.actcms.click"
+							},
+							{
+								"key": "accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic bXNyaW5pdmFzYW5Admlyc2VjLmNvbTpQQHNzd29yZEAxMjM0NTY="
+							},
+							{
+								"key": "cache-control",
+								"value": "max-age=0"
+							},
+							{
+								"key": "cookie",
+								"value": "indicator=d3B9YnQ%3D; JSESSIONID=649B7788CAA25B4BF0BF09D01CDC7C92"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "document"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "navigate"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "none"
+							},
+							{
+								"key": "sec-fetch-user",
+								"value": "?1"
+							},
+							{
+								"key": "upgrade-insecure-requests",
+								"value": "1"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"probeSet\": [\"d6e9e676-e753-470d-b72c-8b6e478185ba\", \"cdb37cd7-800c-425b-bbb1-509825246b8a\"],\r\n    \"action\": \"stop\",\r\n    \"serviceId\": \"vsp\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://devdemo.actcms.click/rms/service",
+							"protocol": "https",
+							"host": [
+								"devdemo",
+								"actcms",
+								"click"
+							],
+							"path": [
+								"rms",
+								"service"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Migrate",
+			"item": [
+				{
+					"name": "Probe-Migrate",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "P@ssword1234567",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin@virsec.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"probeSet\": [\"be9363b7-0432-4f83-9b12-7dc915b3c859\"],\r\n \"cmsdns\": \"int-sixth.actcms.click\",\r\n \"hostentry\": false,\r\n \"sku\": \"web\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://10.16.6.4/rms/migrate",
+							"protocol": "https",
+							"host": [
+								"10",
+								"16",
+								"6",
+								"4"
+							],
+							"path": [
+								"rms",
+								"migrate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
